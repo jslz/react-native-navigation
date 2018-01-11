@@ -185,7 +185,7 @@ public abstract class Screen extends RelativeLayout implements Subscriber {
     public abstract void unmountReactView();
 
     public String getScreenInstanceId() {
-        return screenParams.getScreenInstanceId();
+        return screenParams.getScreenInstanceId() + "__HACK__" + screenParams.screenId;
     }
 
     public boolean hasScreenInstance(String screenInstanceId) {
